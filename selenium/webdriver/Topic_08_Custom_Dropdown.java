@@ -16,7 +16,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class Topic_08_Custom_Dropdown_Part_I {
+public class Topic_08_Custom_Dropdown {
 	WebDriver driver;
 	WebDriverWait explicitWait;
 	String projectLocation = System.getProperty("user.dir");
