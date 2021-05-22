@@ -38,6 +38,7 @@ public class Topic_11_User_Interactions_Part_II {
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	}
 	
+	@Test
 	public void TC_01_Double_Click() {
 		driver.get("https://automationfc.github.io/basic-form/index.html");
 			
@@ -46,6 +47,7 @@ public class Topic_11_User_Interactions_Part_II {
 		Assert.assertEquals(driver.findElement(By.id("demo")).getText(), "Hello Automation Guys!");
 	}
 	
+	@Test
 	public void TC_02_Right_Click() {
 		driver.get("http://swisnl.github.io/jQuery-contextMenu/demo.html");
 		
@@ -65,6 +67,7 @@ public class Topic_11_User_Interactions_Part_II {
 		Assert.assertFalse(driver.findElement(By.xpath("//li[contains(@class,'context-menu-icon-quit')]")).isDisplayed());
 	}
 	
+	@Test
 	public void TC_03_Drag_And_Drop_HTML4() {
 		driver.get("https://demos.telerik.com/kendo-ui/dragdrop/index");
 		
