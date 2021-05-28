@@ -129,11 +129,10 @@ public class Topic_15_Javascript_Executor {
 	
 	@Test
 	public void TC_04() {
-		String loginPageUrl, userID, password, customerID;
+		String loginPageUrl, userID, password;
 		String name, dob, address, city, state, pin, mobile, email;
 		
 		By nameTextboxBy = By.name("name");
-		By genderRadioBy = By.name("gender");
 		By dobTextboxBy = By.name("dob");
 		By addressTextAreaBy = By.name("addr");
 		By cityTextboxBy = By.name("city");
@@ -202,8 +201,6 @@ public class Topic_15_Javascript_Executor {
 		Assert.assertEquals(driver.findElement(By.xpath("//td[text()='Pin']/following-sibling::td")).getText(), pin);
 		Assert.assertEquals(driver.findElement(By.xpath("//td[text()='Mobile No.']/following-sibling::td")).getText(), mobile);
 		Assert.assertEquals(driver.findElement(By.xpath("//td[text()='Email']/following-sibling::td")).getText(), email);
-				
-		customerID = driver.findElement(By.xpath("//td[text()='Customer ID']/following-sibling::td")).getText();
 	}
 	
 	@AfterClass
